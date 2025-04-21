@@ -20,10 +20,12 @@ class ResturantWidget extends StatelessWidget {
         );
       },
       child: Row(
+        spacing: 8.0,
         children: [
           Image.asset("assets/${restaurant.imagePath}", width: 72),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            spacing: 4.0,
             children: [
               Text(
                 restaurant.name,

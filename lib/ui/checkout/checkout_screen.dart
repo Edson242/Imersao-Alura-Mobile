@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/model/dish.dart';
 import 'package:myapp/ui/_core/bag_provider.dart';
+import 'package:myapp/ui/_core/widgets/bottom_menu.dart';
 import 'package:myapp/ui/home/home_screen.dart';
 import 'package:provider/provider.dart';
 
@@ -40,7 +41,7 @@ class CheckoutScreen extends StatelessWidget {
                     MaterialPageRoute(builder: (context) => HomeScreen()),
                   );
                 },
-                child: Text("Vá para o home"),
+                child: Text("Home"),
               ),
             ],
           ),
@@ -110,6 +111,7 @@ class CheckoutScreen extends StatelessWidget {
             ),
           ),
         ),
+        bottomNavigationBar: BottomMenu(initialIndex: 2),
       );
     }
   }

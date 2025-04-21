@@ -18,6 +18,12 @@ migrate_working_dir/
 *.iws
 .idea/
 
+# Firebase
+android/app/google-services.json
+ios/firebase_app_id_file.json
+ios/Runner/GoogleServices-Info.plist
+lib/firebase_options.dart
+
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
 # is commented out by default.
